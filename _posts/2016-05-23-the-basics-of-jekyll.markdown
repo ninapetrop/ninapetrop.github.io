@@ -12,4 +12,6 @@ For those who love simplicity, speed, security, and complete control, Jekyll may
 
 For a comprehensive overview that covers the differences between Wordpress and Jekyll I'd suggest reading [this article by Sitepoint][link1].
 
+... This post will be continued soon!
+
 [link1]: https://www.sitepoint.com/wordpress-vs-jekyll-might-want-make-switch/
