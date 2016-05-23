@@ -375,6 +375,12 @@ img::selection {
 img::-moz-selection {
   background: transparent; }
 
+a {
+  color: #64B5F6;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
 body {
   -webkit-tap-highlight-color: #B2EBF2; }
 
@@ -413,7 +419,18 @@ main {
       cursor: not-allowed;
       color: grey; }
     main .block p, main .block ul {
-      font-size: 14px; }
+      font-size: 14px;
+      color: #424242; }
+  main .post-list {
+    list-style: none;
+    padding-left: 0; }
+    main .post-list li {
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: capitalize; }
+    main .post-list p {
+      margin-left: 15px;
+      color: grey; }
 
 header {
   background: #283048;
@@ -439,15 +456,40 @@ header {
         -ms-flex-pack: end;
             justify-content: flex-end; }
     header nav a {
-      width: 100px; }
+      width: 100px;
+      color: white; }
+      header nav a:hover {
+        color: #64B5F6;
+        text-decoration: underline; }
   header h1 {
     font-size: 38px; }
   header p {
-    font-size: 18px; }
+    font-size: 18px;
+    font-weight: 300; }
 
 footer {
-  background: #859398;
-  height: 80px;
+  background: #283048;
+  height: 200px;
   width: 100%;
   bottom: 0;
   left: 0; }
+  footer .contact {
+    padding-top: 50px;
+    color: white;
+    font-weight: 300;
+    text-align: center; }
+
+.post-block {
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-left: solid 3px #90CAF9;
+  border-radius: 3px; }
+  .post-block h2 {
+    text-transform: capitalize;
+    margin-bottom: -10px;
+    color: #212121; }
+  .post-block p {
+    font-size: 14px; }
+  .post-block .meta {
+    color: grey; }

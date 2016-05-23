@@ -14,6 +14,18 @@ title: Home
 </div>
 
 <div class='block'>
+	<h1>Posts</h1>
+	<ul class='post-list'>
+	  {% for post in site.posts %}
+	    <li>
+	      <a href="{{ post.url }}">{{ post.title }}</a>
+	    </li>
+			{{ post.excerpt }}
+	  {% endfor %}
+	</ul>
+</div>
+
+<div class='block'>
 	<h1>About this Site</h1>
 
 	<p>This site was built using <a href='https://jekyllrb.com'>Jekyll</a>, a static-site generator and is hosted via <a href='https://pages.github.com' >GitHub Pages</a>. The development enviornment I used to build is is comprised of the following:</p>

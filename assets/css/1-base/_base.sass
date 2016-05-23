@@ -16,6 +16,12 @@ img::selection
 img::-moz-selection
   background: transparent
 
+a
+	color: #64B5F6
+	text-decoration: none
+	&:hover
+		text-decoration: underline
+
 body
   -webkit-tap-highlight-color: $selection-color
 
@@ -60,5 +66,15 @@ main
 		p, ul
 			font:
 				size: 14px
-
-	// Common Classes
+			color: #424242
+	// Post Listing (General/All)
+	.post-list
+		list-style: none
+		padding-left: 0
+		li
+			font-size: 18px
+			font-weight: 600
+			text-transform: capitalize
+		p
+			margin-left: 15px
+			color: grey
