@@ -1,6 +1,6 @@
 # Default, Defaults
 markdown: kramdown
-highlighter: pygments # or rouge or null
+highlighter: rouge 
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 
 # Jekyll Defaults

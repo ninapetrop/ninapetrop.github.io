@@ -4,6 +4,7 @@
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -356,12 +357,6 @@ th {
 * {
   box-sizing: border-box; }
 
-.thick {
-  font-weight: 500; }
-
-.thin {
-  font-weight: 300; }
-
 ::-moz-selection {
   background: #B2EBF2; }
 
@@ -392,5 +387,67 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
-  min-height: 100vh;
   width: 100vw; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  background-image: url("../img/textured-background.png"); }
+
+main {
+  max-width: 750px;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  min-height: 70vh; }
+  main .block {
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-left: solid 3px #64B5F6;
+    border-radius: 3px; }
+    main .block h1, main .block h3 {
+      font-weight: 300; }
+    main .block h3 {
+      margin-left: 35px; }
+    main .block h3.unavailable {
+      cursor: not-allowed;
+      color: grey; }
+    main .block p, main .block ul {
+      font-size: 14px; }
+
+header {
+  background: #283048;
+  background: linear-gradient(to left, #283048, #859398);
+  height: 250px;
+  text-align: center;
+  color: white;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-content: space-around;
+      -ms-flex-line-pack: distribute;
+          align-content: space-around; }
+  header nav {
+    padding: 10px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+    header nav a {
+      width: 100px; }
+  header h1 {
+    font-size: 38px; }
+  header p {
+    font-size: 18px; }
+
+footer {
+  background: #859398;
+  height: 80px;
+  width: 100%;
+  bottom: 0;
+  left: 0; }
