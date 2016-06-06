@@ -1,0 +1,42 @@
+---
+layout: default
+title: Home
+---
+<script>
+var score=0;
+var questions = [
+ ['How many moons does Earth have?', 1],
+ ['How many moons does Saturn have?',31],
+ ['How many moons does Venus have?', 0]
+];
+function askQuestion(question) {
+ var answer = prompt(question[0],'');
+    if (answer == question[1]) {
+        alert('Correct!');
+        score++;
+    } else {
+        alert('Sorry. The correct answer is ' + question[1]);
+    }
+}
+for (var i=0; i<questions.length; i++) {
+ askQuestion(questions[i]);
+}
+
+</script>
+
+<div class='block'>
+	<h1>3.3 A Simple Quiz</h1>
+	<script>
+		var message = 'You got ' + score;
+		message += ' out of ' + questions.length;
+		message += ' questions correct.';
+		document.write('<p>' + message + '</p>');
+	</script>
+</div>
+
+<div class='block'>
+	<h2 class='indent'>All Chapter 3 Tutorials</h2>
+	<h3><a href='{{ site.url }}/tutorials/chapter-3/3-1.html'>3.1 Using Conditional Statements</a></h3>
+	<h3><a href='{{ site.url }}/tutorials/chapter-3/3-2.html'>3.2 Mini-Tutorial</a></h3>
+	<h3><a href='{{ site.url }}/tutorials/chapter-3/3-3.html'>3.3 A Simple Quiz</a></h3>
+</div>

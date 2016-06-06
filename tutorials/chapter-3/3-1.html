@@ -1,0 +1,31 @@
+---
+layout: default
+title: Home
+---
+<script>
+var luckyNumber = prompt('What is your lucky number?','');
+luckyNumber = parseInt(luckyNumber, 10);
+if (isNaN(luckyNumber)) {
+ luckyNumber = prompt('Please, tell me your lucky number.','');
+}
+</script>
+
+<div class='block'>
+	<h1>3.1 Using Conditional Statements</h1>
+	<script>
+		if (luckyNumber == 7 ) {
+			document.write("<p>Hey, 7 is my lucky number too!</p>");
+		} else if (luckyNumber == 13 || luckyNumber == 24) {
+ 			document.write("<p>Wooh. " + luckyNumber + "? That's an unlucky number!</p>");
+		} else {
+ 			document.write("<p>The number " + luckyNumber + " is lucky for you!</p>");
+		}
+	</script>
+</div>
+
+<div class='block'>
+	<h2 class='indent'>All Chapter 3 Tutorials</h2>
+	<h3><a href='{{ site.url }}/tutorials/chapter-3/3-1.html'>3.1 Using Conditional Statements</a></h3>
+	<h3><a href='{{ site.url }}/tutorials/chapter-3/3-2.html'>3.2 Mini-Tutorial</a></h3>
+	<h3><a href='{{ site.url }}/tutorials/chapter-3/3-3.html'>3.3 A Simple Quiz</a></h3>
+</div>
