@@ -4,12 +4,14 @@
 
 // Base
 @import "1-base/base.sass";
+@import "1-base/typography.sass";
 @import "1-base/vars.sass";
 
 // Modules
 @import "2-modules/slide-out-menu.sass";
 // Sections
+@import "3-sections/footer.sass";
 @import "3-sections/header.sass";
 @import "3-sections/nav.sass";
 //Layouts
-@import "4-layouts/post.sass";
+@import "4-layouts/home.sass";
