@@ -1,0 +1,24 @@
+---
+layout: default
+title: Home
+---
+<script>
+function printToday() {
+	var today = new Date();
+	document.write(today.toDateString());
+}
+
+</script>
+
+<div class='block'>
+	<h1>3.2 Mini-Tutorial</h1>
+	<p>Today is <strong>
+		<script>printToday();</script>
+</div>
+
+<div class='block'>
+	<h2 class='indent'>All Chapter 3 Tutorials</h2>
+	<h3><a href='{{ site.url }}/tutorials/chapter-3/3-1.html'>3.1 Using Conditional Statements</a></h3>
+	<h3><a href='{{ site.url }}/tutorials/chapter-3/3-2.html'>3.2 Mini-Tutorial</a></h3>
+	<h3><a href='{{ site.url }}/tutorials/chapter-3/3-3.html'>3.3 A Simple Quiz</a></h3>
+</div>
