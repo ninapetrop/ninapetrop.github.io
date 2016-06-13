@@ -141,10 +141,16 @@ nav.top-bar {
       text-transform: uppercase;
       width: 100px; }
 
+span {
+  font-family: Open Sans, sans-serif; }
+
 section.card-wrap {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
@@ -155,9 +161,8 @@ section.card-wrap {
     list-style: none;
     padding-left: 0; }
   section.card-wrap .card-container {
-    -webkit-perspective: 1000px;
-            perspective: 1000px;
-    margin-right: 20px; }
+    margin-top: 45px;
+      margin-top-perspective: 1000px; }
   section.card-wrap .card {
     position: relative;
     width: 270px;
@@ -165,14 +170,9 @@ section.card-wrap {
     transition: all 0.6s ease;
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d; }
-  section.card-wrap #jekyll-themes .front, section.card-wrap #jekyll-themes .back {
-    background: #56445D; }
-  section.card-wrap #tutorials .front, section.card-wrap #tutorials .back {
-    background: #548687; }
-  section.card-wrap #recent-work .front, section.card-wrap #recent-work .back {
-    background: #8FBC94; }
   section.card-wrap .front, section.card-wrap .back {
     position: absolute;
+    background: linear-gradient(-45deg, #EC7357 15%, #FDD692);
     top: 0;
     left: 0;
     width: 270px;
@@ -180,7 +180,8 @@ section.card-wrap {
     border-radius: 5px;
     color: white;
     -webkit-backface-visibility: hidden;
-            backface-visibility: hidden; }
+            backface-visibility: hidden;
+    box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4); }
   section.card-wrap .front {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -209,3 +210,10 @@ section.card-wrap {
   section.card-wrap .back {
     -webkit-transform: rotateY(180deg);
             transform: rotateY(180deg); }
+  section.card-wrap .front img {
+    width: 80px;
+    height: auto; }
+  section.card-wrap #themes {
+    background: linear-gradient(-45deg, #8FBC94 15%, #C5E99B); }
+  section.card-wrap #tutorials {
+    background: linear-gradient(-45deg, #2E294E 15%, #9055A2); }

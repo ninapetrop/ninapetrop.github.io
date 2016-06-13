@@ -1,14 +1,16 @@
+span
+	font-family: $Open
 section.card-wrap
 	display: flex
+	flex-wrap: wrap
 	align-items: center
 	justify-content: space-between
 	ul
 		list-style: none
 		padding-left: 0
 	.card-container
-  perspective: 1000px
-  margin-right: 20px
-
+		margin-top: 45px
+  	perspective: 1000px
 
 	.card
 	  position: relative
@@ -16,27 +18,18 @@ section.card-wrap
 	  height: 270px
 	  transition: all 0.6s ease
 	  transform-style: preserve-3d
-	#jekyll-themes
-		.front,.back
-			background: #56445D
-	#tutorials
-		.front,.back
-			background: #548687
-	#recent-work
-		.front,.back
-			background: #8FBC94
 
 	.front,.back
 	  position: absolute
-	  //background: #7FC6A4
+	  background: linear-gradient( -45deg, #EC7357 15%, #FDD692 )
 	  top: 0
 	  left: 0
 	  width: 270px
 	  height: 270px
 	  border-radius: 5px
 	  color: white
-	  //box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15)
 	  backface-visibility: hidden
+	 	box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4)
 
 
 	.front
@@ -57,3 +50,13 @@ section.card-wrap
 
 	.back
 	  transform: rotateY(180deg)
+
+	.front img
+		width: 80px
+		height: auto
+
+	#themes
+		background: linear-gradient( -45deg, #8FBC94 15%, #C5E99B )
+
+	#tutorials
+		background: linear-gradient( -45deg, #2E294E 15%, #9055A2 )
