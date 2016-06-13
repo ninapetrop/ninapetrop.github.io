@@ -10,8 +10,8 @@ description: A small and simple site I made to test out Jekyll. Watch out! I'm g
 baseurl: "" # the subpath of your site, e.g. /blog
 
 # Where can people find your site?
-#url: "http://ninapetrop.github.io"
-url: "http://localhost:3000"
+url: "http://ninapetrop.github.io"
+#url: "http://localhost:3000"
 # When developing, set this ^ equal to whatever localhost you're using
 
 # Socail Media links
