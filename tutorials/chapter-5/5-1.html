@@ -1,0 +1,43 @@
+---
+layout: default
+title: Introducing Events
+---
+
+<div class='block main'>
+		<h1>Introducing Events</h1>
+		<p><a href="#" class='tutorial-link'>A Link</a></p>
+		<form action="#" method="get">
+		<fieldset><legend>A Form</legend><p><input name="button" type="button" id="button" value="A Button"></p>
+		<p><input name="textfield" id="textfield" type="text"></p></fieldset>
+		</form>
+</div>
+
+<div class='block'>
+	<h2 class='indent'>All Chapter 5 Tutorials</h2>
+	<h3><a href='{{ site.url }}/tutorials/chapter-5/5-1.html'>5.1 Introducing Events</a></h3>
+	<h3><a href='{{ site.url }}/tutorials/chapter-5/5-2.html'>5.2 A One-Page FAQ</a></h3>
+</div>
+
+
+<script src="jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+
+	$('html').dblclick(function() {
+		alert('ouch');
+	});
+
+	$('.tutorial-link').mouseover(function() {
+		var message = "<p>You moused over a link</p>";
+		$('.main').append(message);
+	});
+
+	$('#button').click(function() {
+		$(this).val("Stop that!");
+	});
+
+	$('#textfield').focus(function() {
+		$(this).css('background-color','red');
+	});
+});
+</script>
