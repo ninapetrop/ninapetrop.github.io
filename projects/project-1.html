@@ -1,0 +1,42 @@
+---
+layout: default
+title: Project 1
+---
+<style>
+span {
+	color: grey;
+}
+img {
+  height: 250px;
+  width: auto;
+	margin: auto;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+</style>
+<div class='block' style='text-align:center;'>
+	<h1>Project One: <span>Rollover Effects</span></h1>
+	<p>Move your mouse over the image below.</p>
+	<img id="photo" src="http://www.designbolts.com/wp-content/uploads/2015/08/CHOCOAN-PECCARY.jpg"/>
+</div>
+
+<script src="{{ site.url }}/assets/js/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+
+// Variable Declarations
+var oldPhoto = new Image();
+		oldPhoto.src = 'http://www.designbolts.com/wp-content/uploads/2015/08/CHOCOAN-PECCARY.jpg';
+var newPhoto = new Image();
+		newPhoto.src = 'http://www.designbolts.com/wp-content/uploads/2015/08/DIADEMED-SIFAKA.jpg';
+$('#photo')
+	// when cursor is on image, change it
+	.mouseover(function() {
+		$(this).attr('src', newPhoto.src);
+	})
+	// when cursor leaves image, change it back
+	.mouseleave(function() {
+		$(this).attr('src', oldPhoto.src);
+	});
+
+});
+</script>
