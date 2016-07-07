@@ -1,7 +1,9 @@
 // Tools
 //@import "0-tools/normalize";
 @import "0-tools/fonts";
-
+@import "0-tools/animate.min.css";
+@import "0-tools/slideInLeft.css";
+@import "0-tools/slideInRight.css";
 // Base
 @import "1-base/base.sass";
 @import "1-base/typography.sass";
@@ -13,5 +15,7 @@
 @import "3-sections/footer.sass";
 @import "3-sections/header.sass";
 @import "3-sections/nav.sass";
+@import "3-sections/recent-work.sass";
+@import "3-sections/skills.sass";
 //Layouts
 @import "4-layouts/home.sass";

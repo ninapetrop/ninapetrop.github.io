@@ -1,0 +1,116 @@
+#skills
+	//padding: 20px 0
+	h2
+		font:
+			weight: 300
+			size: 28px
+		letter-spacing: 4.8px
+		text-align: left
+		text-transform: uppercase
+		color: $grey
+
+	#skills-chart
+		background: #f9f9f9
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		box-shadow: 0px 1px 4px 0px rgba(92, 92, 92, .4)
+		border-radius: 4px
+		margin-bottom: 25px
+		opacity: .1
+		transition: all 1.3s ease-in-out
+		&.is-showing
+			opacity: 1
+		header
+			text-align: center
+			width: 100%
+			height: 80px
+			text-transform: uppercase
+			letter-spacing: 1.7px
+			font-size: 18px
+			color: white
+			padding: 20px
+			background: #6e6e6e
+			margin-bottom: 40px
+		.triangle
+			width: 0
+			height: 0
+			border-left: 20px solid transparent
+			border-right: 20px solid transparent
+
+			border-top: 20px solid #6e6e6e
+			margin: auto
+			position: relative
+			bottom: -30px
+		.skill-group
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+			margin: 10px auto
+			width: 400px
+			label
+				width: 100px
+				font-weight: 500
+				color: $grey
+			.strength-meter
+				height: 25px
+				width: 290px
+				border-radius: 20px
+				background: #f2f2f2
+				box-shadow: 0px 1px 4px 0px rgba(92, 92, 92, .5)
+				.value
+					height: 100%
+					border-radius: 20px
+					color: transparent
+					text-align: center
+					font-weight: 600
+					padding: 2px 0
+					transition: all .8s ease-in-out
+					width: 0
+					font-size: 14px
+				.value.animate
+					color: white
+				.value.html
+					background: #FF8888
+					&.animate
+						width: 100%
+				.value.css
+					background: #88E2FF
+					&.animate
+						width: 100%
+				.value.javascript
+					background: #FFC988
+					&.animate
+						width: 75%
+						border-top-right-radius: 0
+						border-bottom-right-radius: 0
+				.value.sass
+					background: #BC88FF
+					&.animate
+						width: 100%
+				.value.jade
+					background: #8DE0B1
+					&.animate
+						width: 100%
+
+				// Frameworks
+				.value.bootstrap
+					background: #BC88FF
+					&.animate
+						width: 100%
+				.value.mojolicious
+					background: #BC88FF
+					&.animate
+						width: 65%
+				.value.django
+					background: #BC88FF
+					&.animate
+						width: 65%
+				.value.wordpress
+					background: #BC88FF
+					&.animate
+						width: 60%
+				.value.jekyll
+					background: #BC88FF
+					&.animate
+						width: 100%
