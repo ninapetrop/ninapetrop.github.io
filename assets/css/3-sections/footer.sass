@@ -1,15 +1,26 @@
 footer
 	background: #D8D8D8
 	color: $grey
-	h2
-		font:
-			weight: 300
-			size: 28px
-		letter-spacing: 4.8px
-		text-align: left
-		text-transform: uppercase
-	.column.twelve
-		ul
-			padding-left: 0
-			li
-				font-size: 14px
+	.row
+		h2
+			font:
+				weight: 300
+				size: 28px
+			letter-spacing: 4.8px
+			text-align: left
+			text-transform: uppercase
+		.link
+			text-decoration: none
+			color: white
+			&:hover
+				text-decoration: underline
+		#email-trigger
+			transition: 1s ease-in-out
+			color: white
+			cursor: pointer
+			&.hide
+				display: none
+		#email-revealed
+			transition: 1s ease-in-out
+			&.hide
+				display: none

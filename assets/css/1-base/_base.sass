@@ -43,6 +43,8 @@ body
 	margin-bottom: 50px
 .clearfix
 	clear: both
+.white
+	background: #f9f9f9
 
 // Grid Styles
 
@@ -56,19 +58,20 @@ body
 	.column
 		margin: auto 10px
 	.column.four
-		width: 299px
+		max-width: 299px
 	.column.five
 		max-width: 376px
 	.column.six
-		width: 460px
+		max-width: 460px
 	.column.eight
-		width: 620px
+		max-width: 620px
 	.column.two
-		width: 139px
+		@media screen and (min-width:493px)
+			max-width: 139px
 	.column.three
-		width: 220px
+		max-width: 220px
 	.column.twelve
-		width: 940px
+		width: 100%
 		margin: 15px auto
 	.column.pull-right
 		margin-left: auto

@@ -1,12 +1,25 @@
 section#header
-	background-position: center center
-	background-size: cover
+	// background-position: center center fixed
+	// background-size: cover
 	height: 85vh
 	width: 100%
 	margin: 0
 	display: flex
 	flex-direction: column
 	color: white
+	background-image: linear-gradient( 140deg, rgba(214, 70, 70, 1), rgba(237, 125, 125, .95) ), url(/assets/img/small_steps.png)
+
+	.row
+		width: 100%
+		justify-content: flex-start
+
+	.pull-left
+		left: 0
+		float: left
+		align-content: flex-start
+		padding-left: 0
+		margin-left: 0
+		text-align: left
 
 	.column.five
 		text-align: right
@@ -24,6 +37,8 @@ section#header
 			font-weight: 500
 			font-size: 18px
 			margin-bottom: 10px
+			color: white
+			text-align: right
 		p
 			font-weight: 300
 			font-size: 18px
@@ -31,47 +46,19 @@ section#header
 
 	.column.two
 		display: flex
-		flex-direction: column
+		flex-direction: row
 		justify-content: space-between
-		height: 200px
-
+		@media screen and (min-width:493px)
+			flex-direction: column
+			height: 200px
+		padding-left: 50px
+		@media screen and (max-width:493px)
+			width: 200px
 		img
 			height: 45px
 			width: 45px
 			margin-left: auto
-	#box
-		width: 450px
-		height: 390px
-		margin: 50px auto
-		background: rgba(25, 25, 25, .4)
-		border-radius: 2px
-		color: white
-		text-align: center
 
-		h1
-			font-size: 36px
-			text-transform: uppercase
-			font-weight: 700
-		h2
-			font-size: 18px
-			font-weight: 300
-
-	nav
-		height: 60px
-		width: 100%
-		background: rgba(225, 225, 225, .16)
-		margin: 0
-		bottom: 0
-		padding: 5px 15px
-		text-align: center
-		color: white
-		font-weight: 600
-
-
-	nav.sticky
-		position: fixed
-		background: rgba(214, 70, 70, .8)
-		top: 0
 section#about
 	.row
 		color: #4A4A4A

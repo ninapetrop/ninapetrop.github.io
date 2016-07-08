@@ -2,27 +2,30 @@
 layout: default
 title: Home
 ---
-<section id='header' style='background-image: url({{ site.url }}/assets/img/header-bg.svg)'>
+<section id='header'>
 	<div class='row'>
 
-		<div class='column five'>
+		<div class='column five pull-left'>
 			<div id='line'></div>
 			<h1 class='uppercase'>Nina Petropoulos</h1>
 			<h2>Front-End Developer</h2>
 			<p>Boston, MA</p>
 		</div>
 
-		<div class='column two'>
-			<img src='{{site.url}}/assets/img/googleplus.png'>
-			<img src='{{site.url}}/assets/img/github.png'>
-			<img src='{{site.url}}/assets/img/linkedin.png'>
+		<div class='column two pull-left'>
+			<a href='https://plus.google.com/104559929190560636919' target='_blank'><img src='{{site.url}}/assets/img/googleplus.png'></a>
+			<a href='https://github.com/ninapetrop' target='_blank'><img src='{{site.url}}/assets/img/github.png'></a>
+			<a href='https://www.linkedin.com/in/ninapetropoulos' target='_blank'><img src='{{site.url}}/assets/img/linkedin.png'></a>
 		</div>
 	</div>
 
 	<nav class='column twelve'>
-		<p>
-			Explore
-		</p>
+		<a href='{{ site.url }}'><img src='{{ site.url }}/assets/img/n-logo.svg' id='logo' ></a>
+		<div id='links'>
+			<a href='https://github.com/ninapetrop' target='_blank'>Git</a>
+			<a href='{{ site.url}}/secret-stash.html'>Secret Stash</a>
+		</div>
+
 	</nav>
 </section>
 
@@ -38,26 +41,8 @@ title: Home
 		</div>
 		<div class='column six center'>
 			<p>
-				I'm an English major at the University of Massachusetts Lowell. I type, I write, I pun, I read but somwhere along the line I became bored and taught myself the fundamentals of web developement. Here's what I've learned and done so far.
+				I'm an English major at the University of Massachusetts Lowell. I type, I write, I pun, I read but somewhere along the line I became bored and taught myself the fundamentals of web development. Here's what I've learned and done so far.
 			</p>
-		</div>
-
-		<div class='column two pull-right'>
-			<b>On the Web</b>
-			<ul>
-				<li>
-					GitHub
-				</li>
-				<li>
-					LinkedIn
-				</li>
-				<li>
-					Google Plus
-				</li>
-				<li>
-					Soundcloud
-				</li>
-			</ul>
 		</div>
 	</div>
 </section>
@@ -65,124 +50,53 @@ title: Home
 <section id='recent-work'>
 	<div class='row'>
 		<div class='column twelve'>
-			<h2>Recent Work:<span> Projects and Process</span></h2>
+			<h2>Recent Work:<span> Projects and Concepts</span></h2>
 		</div>
-		<div class='column four line'></div>
-		<div class='column two'>
-			<h3>2016</h3>
-		</div>
-		<div class='column four line'></div>
 	</div>
 
 	<div class='row'>
 		<div class='column four work-wrap'>
 			<div class='background' style='background-image: url({{ site.url }}/assets/img/ficticious-theme.pdf)'></div>
-			<h4>Ficticious</h4>
-			<p>A photo-heavy blog template for Jekyll.</p>
-			<ul>
-				<li>
-					Demo
-				</li>
-				<li>
-					Git
-				</li>
-			</ul>
+			<h4>Fictitious</h4>
+			<p>Another Jekyll theme designed for writers. <br><br><a href='{{ site.url }}/assets/img/light-roast-full.pdf' target='_blank'>View Design</a></p>
 		</div>
 
 		<div class='column four work-wrap'>
 			<div class='background' style='background-image: url({{ site.url }}/assets/img/mh-preview.png)'></div>
 			<h4>MH LAN</h4>
-			<p>A niche event site for LAN parties.</p>
-			<ul>
-				<li>
-					Demo
-				</li>
-				<li>
-					Git
-				</li>
-			</ul>
+			<p>A niche event site for LAN parties.<br><br><a href='http://mhlan.com:9001' target='_blank'>Explore</a></p>
 		</div>
 
 		<div class='column four work-wrap'>
 			<div class='background' style='background-image: url({{ site.url }}/assets/img/light-roast-preview.pdf)'></div>
 			<h4>Running On Venti</h4>
-			<p>A custom Wordpress theme for an avid runner and blogger.</p>
-			<ul>
-				<li><a href='{{ site.url }}/assets/img/light-roast-full.pdf'>View Design</a>
-				</li>
-				<li>
-					Git
-				</li>
-			</ul>
+			<p>A custom WordPress theme for an avid runner and blogger.<br><br><a href='{{ site.url }}/assets/img/light-roast-full.pdf' target='_blank'>View Design</a></p>
 		</div>
 	</div>
 
-	<div class='row'>
-		<div class='column four line'>
-
-		</div>
-		<div class='column two'>
-			<h3>2015</h3>
-		</div>
-		<div class='column four line'>
-
-		</div>
-
-	</div>
 
 	<div class='row'>
 		<div class='column four work-wrap'>
 			<div class='background' style='background-image: url({{ site.url }}/assets/img/lunenburg-giftmart.jpg)'></div>
 			<h4>Lunenburg Giftmart</h4>
-			<p>Site design and development for a non-profit in Lunenburg, MA. Complete with validated registration, built alongside a back-end developer using Mojolicious.</p>
-			<ul>
-				<li>
-					Demo
-				</li>
-				<li>
-					Git
-				</li>
-			</ul>
+			<p>A site for a non-profit, built alongside a back-end developer with Mojolicious.<br><br><a href='http://lunenburggiftmart.com' target='_blank'>Explore</a></p>
 		</div>
 
 		<div class='column four work-wrap'>
 			<div class='background' style='background-image: url({{ site.url }}/assets/img/textrade.jpg)' id='textrade'></div>
 			<h4>Textrade</h4>
-			<p>A better way for college students to buy, sell, and trade textbooks. Built in a month and semifinalist in three cateogries.</p>
-			<ul>
-				<li>
-					Demo
-				</li>
-				<li>
-					Git
-				</li>
-			</ul>
+			<p>A better way for college students to buy, sell, and trade textbooks.<br><br><a href='http://www.textrade.us' target='_blank'>Explore</a></p>
 
 
 		</div>
 
 		<div class='column four work-wrap'>
-			<div class='background' style='background-image: url({{ site.url }}/assets/img/lunenburg-giftmart.jpg)'></div>
-			<h4>Ficticious</h4>
-			<p>A niche event site for LAN parties.</p>
-			<!-- Fork -->
-			<!-- Place this tag where you want the button to render. -->
-			<a class="github-button" href="https://github.com/ninapetrop/artist-theme/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/ninapetrop/artist-theme/network" data-count-api="/repos/ninapetrop/artist-theme#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork ninapetrop/artist-theme on GitHub">Fork</a>
-			<!-- Place this tag where you want the button to render. -->
-			<a class="github-button" href="https://github.com/ninapetrop/artist-theme" data-icon="octicon-star" data-style="mega" data-count-href="/ninapetrop/artist-theme/stargazers" data-count-api="/repos/ninapetrop/artist-theme#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star ninapetrop/artist-theme on GitHub">Star</a>
-			<ul>
-				<li>
-					Demo
-				</li>
-				<li>
-					Git
-				</li>
-			</ul>
+			<div class='background' style='background-image: url({{ site.url }}/assets/img/artist-theme.png)'></div>
+			<h4>Artist Theme</h4>
+			<p>A photo-heavy Jekyll theme. Always free, always responsive.<br><br><a href='http://ninapetrop.github.io/Artist-Theme/' target='_blank'>Explore</a></p>
 		</div>
 	</div>
 </section>
-<!-- <div class='work-image' style='background-image: url({{ site.url }}/assets/img/textrade.jpg)'></div> -->
-
 
 <section id='skills'>
 	<div class='row'>
@@ -206,11 +120,11 @@ title: Home
 			<div class='skill-group'>
 				<label>CSS3:</label>
 				<div class='strength-meter'>
-					<div class='value css'>Superman Strong</div>
+					<div class='value css'>Down Pat</div>
 				</div>
 			</div>
 			<div class='skill-group'>
-				<label>Javascript:</label>
+				<label>JavaScript:</label>
 				<div class='strength-meter'>
 					<div class='value javascript'>Independent Woman</div>
 				</div>
@@ -218,7 +132,7 @@ title: Home
 			<div class='skill-group'>
 				<label>SASS/LESS:</label>
 				<div class='strength-meter'>
-					<div class='value sass'>Strong Grasp</div>
+					<div class='value sass'>Well Versed</div>
 				</div>
 			</div>
 			<div class='skill-group'>
@@ -237,16 +151,16 @@ title: Home
 				</div>
 			</header>
 
-			<div class='skill-group clearfix'>
+			<div class='skill-group'>
 				<label>Bootstrap:</label>
 				<div class='strength-meter'>
-					<div class='value bootstrap'>Superman Strong</div>
+					<div class='value bootstrap'>Easy Peasy</div>
 				</div>
 			</div>
 			<div class='skill-group'>
 				<label>Mojolicious:</label>
 				<div class='strength-meter'>
-					<div class='value mojolicious'>Comfortable</div>
+					<div class='value mojolicious'>Experienced</div>
 				</div>
 			</div>
 			<div class='skill-group'>
@@ -256,7 +170,7 @@ title: Home
 				</div>
 			</div>
 			<div class='skill-group'>
-				<label>Wordpress:</label>
+				<label>WordPress:</label>
 				<div class='strength-meter'>
 					<div class='value wordpress'>Hackable</div>
 				</div>
@@ -264,7 +178,7 @@ title: Home
 			<div class='skill-group'>
 				<label>Jekyll:</label>
 				<div class='strength-meter'>
-					<div class='value jekyll'>Strong Grasp</div>
+					<div class='value jekyll'>Knowledgeable</div>
 				</div>
 			</div>
 		</div>
@@ -275,9 +189,8 @@ title: Home
 	<div class='row'>
 		<div class='column twelve'>
 			<h2>Nina Petropoulos</h2>
-			<a href='#'>Email</a>
-			<br>
-			<a href='#'>Resume</a>
+			<p id='email-trigger'>Email</p>
+			<p id='email-revealed' class='hide'>petropoulos.nina@gmail.com</p>
 		</div>
 	</div>
 </footer>

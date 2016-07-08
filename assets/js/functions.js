@@ -7,14 +7,6 @@ $(window).scroll(function(){
 	console.log('wScroll');
 
 
-	if(wScroll > $('nav').offset().top) {
-
-		$('#recent-work .four').each(function(){
-			$('#recent-work .four').addClass('is-showing');
-		});
-	}
-
-
 	if(wScroll > $('#textrade').offset().top) {
 
 		$('#skills #skills-chart').each(function(){
@@ -28,12 +20,7 @@ $(window).scroll(function(){
 
 });
 
-$(document).ready(function(){
-	// Set section-names to the height of the parent
-	var sectionHeight =$('#recent-work').height();
 
-	$('.section-name').css({'height': sectionHeight});
-});
 
 
 $(document).ready(function(){
@@ -68,4 +55,13 @@ $(document).ready(function(){
   // Call it on resize.
   }).resize();
 
-}); // jQuery
+});
+
+$(document).ready(function(){
+
+	$('#email-trigger').hover(function(){
+
+		$('#email-trigger').addClass('hide');
+		$('#email-revealed').removeClass('hide');
+	})
+});
