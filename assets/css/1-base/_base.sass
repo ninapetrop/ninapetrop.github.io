@@ -17,6 +17,7 @@ img::-moz-selection
   background: transparent
 
 body
+	background: #fafafa
   //-webkit-tap-highlight-color: $selection-color
 
 
@@ -28,7 +29,7 @@ body
   min-height: 100vh
 
 body
-  //background: $bg-color
+  background: #EBEBEB
   font-size: 16px
   line-height: 1.6
   font-family: $Open
@@ -36,13 +37,43 @@ body
   -webkit-text-size-adjust: 100%
 
 // Helper Classes
-.nunito
-	font-family: $Nunito
-.center
+.center, .text-center
 	text-align: center
 .margin-bottom
 	margin-bottom: 50px
+.clearfix
+	clear: both
+.white
+	background: #f9f9f9
 
-.content-wrap
-	max-width: 934px
-	margin: 100px auto auto auto
+// Grid Styles
+
+.row
+	max-width: 980px
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-around
+	margin: auto
+	padding: 20px 5px
+	.column
+		margin: auto 10px
+	.column.four
+		max-width: 299px
+	.column.five
+		max-width: 376px
+	.column.six
+		max-width: 460px
+	.column.eight
+		max-width: 620px
+	.column.two
+		@media screen and (min-width:493px)
+			max-width: 139px
+	.column.three
+		max-width: 220px
+	.column.twelve
+		width: 100%
+		margin: 15px auto
+	.column.pull-right
+		margin-left: auto
+	.column.center
+		margin: auto

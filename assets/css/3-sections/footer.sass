@@ -1,22 +1,26 @@
 footer
-	background: #F0F0F0
-	height: 260px
-	//width: 100%
-	.content-wrap
-		padding: 50px auto
-		#identity
-			width: 230px
-			display: flex
-			flex-wrap: wrap
-			img
-				margin-right: 17px
-			p
-				letter-spacing: 1.3px
-				text-transform: uppercase
-				width: 140px
-				font-size: 16px
-			ul
-				list-style: none
-				padding-left: 60px
-				li
-					padding-top: 12px
+	background: #D8D8D8
+	color: $grey
+	.row
+		h2
+			font:
+				weight: 300
+				size: 28px
+			letter-spacing: 4.8px
+			text-align: left
+			text-transform: uppercase
+		.link
+			text-decoration: none
+			color: white
+			&:hover
+				text-decoration: underline
+		#email-trigger
+			transition: 1s ease-in-out
+			color: white
+			cursor: pointer
+			&.hide
+				display: none
+		#email-revealed
+			transition: 1s ease-in-out
+			&.hide
+				display: none

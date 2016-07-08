@@ -2,69 +2,195 @@
 layout: default
 title: Home
 ---
-<h1 class='nunito margin-bottom'>Hey, how's it hanging? My name is Nina, welcome to my site.</h1>
+<section id='header'>
+	<div class='row'>
 
-<p class='big'>
-	This site serves a few purposes... It’s the catch-all for many of the Jekyll Themes that I’ve created, as well as the dumping ground for various homework (yes, homework) exercises for my Javascript class. Along with that I use it to casually blog and promote myself and my work.
-</p>
+		<div class='column five pull-left'>
+			<div id='line'></div>
+			<h1 class='uppercase'>Nina Petropoulos</h1>
+			<h2>Front-End Developer</h2>
+			<p>Boston, MA</p>
+		</div>
 
-<section class='card-wrap'>
-	<div class='card-container'>
-		<div class="card">
-			<a href='{{ site.url }}/jekyll-themes.html'>
-		    <div class="front" id="themes">
-					<img src='{{ site.url }}/assets/img/themes-white.svg'>
-		    </div>
-		    <div class="back" id="themes">
-					<p>Jekyll Themes</p>
-		    </div>
-			</a>
-	  </div>
+		<div class='column two pull-left'>
+			<a href='https://plus.google.com/104559929190560636919' target='_blank'><img src='{{site.url}}/assets/img/googleplus.png'></a>
+			<a href='https://github.com/ninapetrop' target='_blank'><img src='{{site.url}}/assets/img/github.png'></a>
+			<a href='https://www.linkedin.com/in/ninapetropoulos' target='_blank'><img src='{{site.url}}/assets/img/linkedin.png'></a>
+		</div>
 	</div>
 
-	<div class='card-container'>
-		<div class="card">
-	    <div class="front" id="tutorials">
-	      <img src='{{ site.url }}/assets/img/tutorials.svg'>
-	    </div>
-	    <div class="back"  id="tutorials">Tutorials</div>
-	  </div>
-	</div>
+	<nav class='column twelve'>
+		<a href='{{ site.url }}'><img src='{{ site.url }}/assets/img/n-logo.svg' id='logo' ></a>
+		<div id='links'>
+			<a href='https://github.com/ninapetrop' target='_blank'>Git</a>
+			<a href='{{ site.url}}/secret-stash.html'>Secret Stash</a>
+		</div>
 
-	<div class='card-container'>
-		<div class="card">
-	    <div class="front">
-				<img src='{{ site.url }}/assets/img/themes-white.svg'>
-	    </div>
-	    <div class="back">
-				<p>Jekyll Themes</p>
-	    </div>
-	  </div>
-	</div>
-	<div class='card-container'>
-		<div class="card">
-	    <div class="front">
-	      <img src='{{ site.url }}/assets/img/tutorials.svg'>
-	    </div>
-	    <div class="back">Tutorials</div>
-	  </div>
-	</div>
-	<div class='card-container'>
-		<div class="card">
-	    <div class="front">
-				<img src='{{ site.url }}/assets/img/themes-white.svg'>
-	    </div>
-	    <div class="back">
-				<p>Jekyll Themes</p>
-	    </div>
-	  </div>
-	</div>
-	<div class='card-container'>
-		<div class="card">
-	    <div class="front">
-	      <img src='{{ site.url }}/assets/img/tutorials.svg'>
-	    </div>
-	    <div class="back">Tutorials</div>
-	  </div>
+	</nav>
+</section>
+
+<section id='about'>
+	<div class='row'>
+
+		<div class='column twelve center'>
+			<img src='{{site.url}}/assets/img/avatar.jpeg'>
+		</div>
+
+		<div class='column two'>
+
+		</div>
+		<div class='column six center'>
+			<p>
+				I'm an English major at the University of Massachusetts Lowell. I type, I write, I pun, I read but somewhere along the line I became bored and taught myself the fundamentals of web development. Here's what I've learned and done so far.
+			</p>
+		</div>
 	</div>
 </section>
+
+<section id='recent-work'>
+	<div class='row'>
+		<div class='column twelve'>
+			<h2>Recent Work:<span> Projects and Concepts</span></h2>
+		</div>
+	</div>
+
+	<div class='row'>
+		<div class='column four work-wrap'>
+			<div class='background' style='background-image: url({{ site.url }}/assets/img/ficticious-theme.pdf)'></div>
+			<h4>Fictitious</h4>
+			<p>Another Jekyll theme designed for writers. <br><br><a href='#' target='_blank'>View Design</a></p>
+		</div>
+
+		<div class='column four work-wrap'>
+			<div class='background' style='background-image: url({{ site.url }}/assets/img/mh-preview.png)'></div>
+			<h4>MH LAN</h4>
+			<p>A niche event site for LAN parties.<br><br><a href='http://mhlan.com:9001' target='_blank'>Explore</a></p>
+		</div>
+
+		<div class='column four work-wrap'>
+			<div class='background' style='background-image: url({{ site.url }}/assets/img/light-roast-preview.pdf)'></div>
+			<h4>Running On Venti</h4>
+			<p>A custom WordPress theme for an avid runner and blogger.<br><br><a href='{{ site.url }}/assets/img/light-roast-full.pdf' target='_blank'>View Design</a></p>
+		</div>
+	</div>
+
+
+	<div class='row'>
+		<div class='column four work-wrap'>
+			<div class='background' style='background-image: url({{ site.url }}/assets/img/lunenburg-giftmart.jpg)'></div>
+			<h4>Lunenburg Giftmart</h4>
+			<p>A site for a non-profit, built alongside a back-end developer with Mojolicious.<br><br><a href='http://lunenburggiftmart.com' target='_blank'>Explore</a></p>
+		</div>
+
+		<div class='column four work-wrap'>
+			<div class='background' style='background-image: url({{ site.url }}/assets/img/textrade.jpg)' id='textrade'></div>
+			<h4>Textrade</h4>
+			<p>A better way for college students to buy, sell, and trade textbooks.<br><br><a href='http://www.textrade.us' target='_blank'>Explore</a></p>
+
+
+		</div>
+
+		<div class='column four work-wrap'>
+			<div class='background' style='background-image: url({{ site.url }}/assets/img/artist-theme.png)'></div>
+			<h4>Artist Theme</h4>
+			<p>A photo-heavy Jekyll theme. Always free, always responsive.<br><br><a href='http://ninapetrop.github.io/Artist-Theme/' target='_blank'>Explore</a></p>
+		</div>
+	</div>
+</section>
+
+<section id='skills'>
+	<div class='row'>
+		<div class='column twelve'>
+			<h2>Skills: <span>Always Progressing</span></h2>
+		</div>
+		<div class='column eight' id='skills-chart'>
+			<header>
+				Languages
+				<div class='triangle column'>
+
+				</div>
+			</header>
+
+			<div class='skill-group clearfix'>
+				<label>HTML5:</label>
+				<div class='strength-meter'>
+					<div class='value html'>Superman Strong</div>
+				</div>
+			</div>
+			<div class='skill-group'>
+				<label>CSS3:</label>
+				<div class='strength-meter'>
+					<div class='value css'>Down Pat</div>
+				</div>
+			</div>
+			<div class='skill-group'>
+				<label>JavaScript:</label>
+				<div class='strength-meter'>
+					<div class='value javascript'>Independent Woman</div>
+				</div>
+			</div>
+			<div class='skill-group'>
+				<label>SASS/LESS:</label>
+				<div class='strength-meter'>
+					<div class='value sass'>Well Versed</div>
+				</div>
+			</div>
+			<div class='skill-group'>
+				<label>Jade:</label>
+				<div class='strength-meter'>
+					<div class='value jade'>Strong Grasp</div>
+				</div>
+			</div>
+		</div>
+
+		<div class='column eight' id='skills-chart'>
+			<header>
+				Frameworks
+				<div class='triangle column'>
+
+				</div>
+			</header>
+
+			<div class='skill-group'>
+				<label>Bootstrap:</label>
+				<div class='strength-meter'>
+					<div class='value bootstrap'>Easy Peasy</div>
+				</div>
+			</div>
+			<div class='skill-group'>
+				<label>Mojolicious:</label>
+				<div class='strength-meter'>
+					<div class='value mojolicious'>Experienced</div>
+				</div>
+			</div>
+			<div class='skill-group'>
+				<label>Django:</label>
+				<div class='strength-meter'>
+					<div class='value django'>Ins and Outs</div>
+				</div>
+			</div>
+			<div class='skill-group'>
+				<label>WordPress:</label>
+				<div class='strength-meter'>
+					<div class='value wordpress'>Hackable</div>
+				</div>
+			</div>
+			<div class='skill-group'>
+				<label>Jekyll:</label>
+				<div class='strength-meter'>
+					<div class='value jekyll'>Knowledgeable</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer>
+	<div class='row'>
+		<div class='column twelve'>
+			<h2>Nina Petropoulos</h2>
+			<p id='email-trigger'>Email</p>
+			<p id='email-revealed' class='hide'>petropoulos.nina@gmail.com</p>
+		</div>
+	</div>
+</footer>
