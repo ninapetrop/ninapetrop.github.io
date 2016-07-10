@@ -54,7 +54,7 @@ body {
       -ms-flex-pack: distribute;
           justify-content: space-around;
   margin: auto;
-  padding: 20px 5px; }
+  padding: 20px; }
   .row .column {
     margin: auto 10px; }
   .row .column.four {
@@ -121,21 +121,9 @@ footer {
     letter-spacing: 4.8px;
     text-align: left;
     text-transform: uppercase; }
-  footer .row .link {
-    text-decoration: none;
-    color: white; }
-    footer .row .link:hover {
-      text-decoration: underline; }
-  footer .row #email-trigger {
-    transition: 1s ease-in-out;
-    color: white;
-    cursor: pointer; }
-    footer .row #email-trigger.hide {
-      display: none; }
-  footer .row #email-revealed {
-    transition: 1s ease-in-out; }
-    footer .row #email-revealed.hide {
-      display: none; }
+  footer .row span {
+    font-size: 14px;
+    padding-left: 10px; }
 
 nav {
   height: 60px;
@@ -224,7 +212,7 @@ nav.sticky {
         -ms-flex-direction: column;
             flex-direction: column; }
     #recent-work .row .column.four.work-wrap .background {
-      width: 299px;
+      width: 290px;
       height: 200px;
       background-position: top center;
       background-size: cover;
@@ -368,25 +356,25 @@ nav.sticky {
         #skills #skills-chart .skill-group .strength-meter .value.bootstrap.animate {
           width: 100%; }
       #skills #skills-chart .skill-group .strength-meter .value.mojolicious {
-        background: #F89957; }
+        background: #FFC988; }
         #skills #skills-chart .skill-group .strength-meter .value.mojolicious.animate {
           width: 55%;
           border-top-right-radius: 0;
           border-bottom-right-radius: 0; }
       #skills #skills-chart .skill-group .strength-meter .value.django {
-        background: #5EBA7F; }
+        background: #8DE0B1; }
         #skills #skills-chart .skill-group .strength-meter .value.django.animate {
           width: 50%;
           border-top-right-radius: 0;
           border-bottom-right-radius: 0; }
       #skills #skills-chart .skill-group .strength-meter .value.wordpress {
-        background: #2B8DD0; }
+        background: #88E2FF; }
         #skills #skills-chart .skill-group .strength-meter .value.wordpress.animate {
           width: 60%;
           border-top-right-radius: 0;
           border-bottom-right-radius: 0; }
       #skills #skills-chart .skill-group .strength-meter .value.jekyll {
-        background: #6D6E6A; }
+        background: #FF8888; }
         #skills #skills-chart .skill-group .strength-meter .value.jekyll.animate {
           width: 95%;
           border-top-right-radius: 0;
@@ -480,7 +468,7 @@ section#header {
       margin-left: auto; }
 
 section#about .row {
-  color: #4A4A4A; }
+  padding: 40px 20px; }
   section#about .row .column.twelve {
     text-align: center; }
     section#about .row .column.twelve img {
@@ -490,23 +478,5 @@ section#about .row {
       border: solid 8px white;
       margin: auto;
       box-shadow: 0px 1px 4px 0px rgba(92, 92, 92, 0.5); }
-  section#about .row .column.two h2 {
-    font-size: 24px;
-    font-family: Montserrat, sans-serif;
-    font-weight: 400; }
-  section#about .row .column.two p {
-    font-size: 16px; }
-  section#about .row .column.two.pull-right {
-    padding-left: 40px;
-    position: relative;
-    top: -120px; }
-    section#about .row .column.two.pull-right b {
-      font-size: 16px;
-      font-family: Montserrat, sans-serif;
-      font-weight: 400; }
-    section#about .row .column.two.pull-right ul {
-      list-style: none;
-      padding-left: 0; }
-      section#about .row .column.two.pull-right ul li {
-        line-height: 28px;
-        color: #4A90E2; }
+  section#about .row .column.six p {
+    color: #9B9B9B; }

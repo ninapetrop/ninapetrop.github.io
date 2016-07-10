@@ -56,12 +56,3 @@ $(document).ready(function(){
   }).resize();
 
 });
-
-$(document).ready(function(){
-
-	$('#email-trigger').hover(function(){
-
-		$('#email-trigger').addClass('hide');
-		$('#email-revealed').removeClass('hide');
-	})
-});
