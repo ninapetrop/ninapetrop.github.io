@@ -308,6 +308,9 @@ nav.sticky {
             justify-content: space-between;
     margin: 10px auto;
     max-width: 400px; }
+    @media screen and (max-width: 463px) {
+      #skills #skills-chart .skill-group {
+        padding: 0 10px; } }
     #skills #skills-chart .skill-group label {
       width: 100px;
       font-weight: 500;
