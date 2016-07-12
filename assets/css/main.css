@@ -121,9 +121,11 @@ footer {
     letter-spacing: 4.8px;
     text-align: left;
     text-transform: uppercase; }
-  footer .row span {
+  footer .row span, footer .row a {
     font-size: 14px;
-    padding-left: 10px; }
+    padding-left: 10px;
+    text-decoration: none;
+    color: #9B9B9B; }
 
 nav {
   height: 60px;
