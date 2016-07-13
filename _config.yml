@@ -11,7 +11,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 
 # Where can people find your site?
 #url: "http://localhost:3000"
-url: "http://ninapetropoulos.me"
+url: "http://ninapetrop.github.io"
 # When developing, set this ^ equal to whatever localhost you're using
 
 # Socail Media links
