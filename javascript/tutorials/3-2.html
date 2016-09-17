@@ -1,0 +1,30 @@
+---
+layout: default
+title: Home
+---
+<head>
+	<script>
+	function printToday() {
+		var today = new Date();
+		document.write(today.toDateString());
+	}
+	</script>
+</head>
+
+<section>
+	<div class='row'>
+
+		<div class='column twelve center'>
+			<h2>Chapter 3:<span> Mini Tutorial</span></h2>
+		</div>
+	</div>
+</section>
+
+<section class='white'>
+	<div class='row'>
+		<div class='column twelve center'>
+			<h3>Mini Tutorial</h3>
+			<p>Today is <strong><script>printToday();</script></strong></p>
+		</div>
+	</div>
+</section>
