@@ -1,0 +1,46 @@
+---
+layout: default
+title: Home
+---
+<head>
+	<script src="{{ site.url }}/assets/js/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('html').dblclick(function() {
+				alert('ouch');
+			}); // end doubleclick
+			$('a').mouseover(function() {
+				var message = "<p>You moused over a link</p>";
+				$('.main').append(message);
+			}); // end mouseover
+			$('#button').click(function() {
+				$(this).val("Stop that!");
+			}); // end click
+			$('#textfield').focus(function() {
+				$(this).css('background-color','red');
+			}); // end focus
+		}); // end ready
+	</script>
+</head>
+
+<section>
+	<div class='row'>
+
+		<div class='column twelve center'>
+			<h2>Chapter 5:<span> Introducing Events</span></h2>
+		</div>
+	</div>
+</section>
+
+<section class='white'>
+	<div class='row'>
+		<div class='column twelve center main'>
+			<h3>Introducing Events</h3>
+			<p><a href="#">A Link</a></p>
+			<form action="#" method="get">
+			<fieldset><legend>A Form</legend><p><input name="button" type="button" id="button" value="A Button"></p>
+			<p><input name="textfield" id="textfield" type="text"></p></fieldset>
+			</form>
+		</div>
+	</div>
+</section>
