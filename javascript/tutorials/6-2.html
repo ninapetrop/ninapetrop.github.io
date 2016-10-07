@@ -1,0 +1,66 @@
+---
+layout: default
+title: Home
+---
+<link href="site.css" rel="stylesheet">
+<style>
+#dashboard {
+	width: 110px;
+	background-color: rgb(255,211,224);
+	padding: 20px 20px 0 20px;
+	position: absolute;
+	left: -92px;
+	z-index: 100;
+}
+#dashboard img {
+	margin-bottom: 20px;
+	border: 1px solid rgb(0,0,0);
+}
+</style>
+<script src="{{ site.url }}/assets/js/jquery.min.js"></script>
+<script src="{{ site.url }}/assets/js/jquery-ui.min.js"></script>
+<script>
+$(document).ready(function() {
+ 	$('#dashboard').hover(
+	function()
+	{
+		$(this).stop().animate(
+		{
+			left: '0',
+			backgroundColor: 'rgb(27,45,94)'
+		},
+		500,
+		'easeInSine'
+		 );//end animate
+	},
+	function()
+	{
+		$(this).stop().animate(
+		{
+			left:'-92px',
+			backgroundColor: 'rgb(255,211,224)'
+		},
+		1500,
+		'easeOutBounce'
+	)//end animate
+	})//end hover
+}); // end ready
+</script>
+</head>
+
+<div class="wrapper">
+	<div id="dashboard">
+	<img src="small/blue_h.jpg" width="70" height="70" alt="blue">
+	<img src="small/green_h.jpg" width="70" height="70" alt="green">
+	<img src="small/orange_h.jpg" width="70" height="70" alt="orange">
+	<img src="small/purple_h.jpg" width="70" height="70" alt="purple">
+	<img src="small/red_h.jpg" width="70" height="70" alt="red">
+	<img src="small/yellow_h.jpg" width="70" height="70" alt="yellow">
+	</div>
+	<div class="content">
+		<div class="main">
+		<h1>Slide in Dashboard</h1>
+		<p>Mouse over the pink stripe on the left edge of this page</p>
+		</div>
+	</div>
+</div>
