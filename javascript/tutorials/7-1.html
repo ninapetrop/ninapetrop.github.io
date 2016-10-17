@@ -1,0 +1,49 @@
+---
+layout: default
+title: Home
+---
+<style>
+	#gallery img {
+		display: inline-block;
+		margin: 10px;
+		border: 1px solid rgb(0,0,0);
+	}
+</style>
+<script src="jquery.min.js"></script>
+
+<script>
+	$(document).ready(function() {
+	 $('#gallery img').each(function() {
+		var imgFile = $(this).attr('src');
+		var preloadImage = new Image();
+	  	var imgExt = /(\.\w{3,4}$)/;
+	 	 preloadImage.src = imgFile.replace(imgExt,'_h$1');
+
+		$(this).hover(
+			function() {
+				$(this).attr('src', preloadImage.src);
+			},
+			function () {
+				$(this).attr('src', imgFile);
+			}
+		); // end hover
+	}); // end each
+	}); // end ready
+</script>
+
+<section class='white'>
+	<div class='row'>
+		<div class='column twelve center main' style='padding-bottom:100px;'>
+			<h3>Rollover Images</h3>
+
+			<div id="gallery">
+				<a href="images/large/blue.jpg"><img src="images/small/blue.jpg" width="70" height="70" alt="blue"></a>
+				<a href="images/large/green.jpg"><img src="images/small/green.jpg" width="70" height="70" alt="green"></a>
+				<a href="images/large/orange.jpg"><img src="images/small/orange.jpg" width="70" height="70" alt="orange"></a>
+				<a href="images/large/purple.jpg"><img src="images/small/purple.jpg" width="70" height="70" alt="purple"></a>
+				<a href="images/large/red.jpg"><img src="images/small/red.jpg" width="70" height="70" alt="red"></a>
+				<a href="images/large/yellow.jpg"><img src="images/small/yellow.jpg" width="70" height="70" alt="yellow"></a>
+			</div>
+		</div>
+	</div>
+</section>
