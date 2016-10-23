@@ -1,29 +1,26 @@
-$(window).scroll(function(){
-
-	var wScroll = $(this).scrollTop();
-	var navPos = $('nav').offset().top;
-	var headPos = $('#header').offset().bottom;
-
-	console.log('wScroll');
-
-
-	if(wScroll > $('#textrade').offset().top) {
-
-		$('#skills #skills-chart').each(function(){
-			$('#skills #skills-chart').addClass('is-showing');
-		});
-
-		$('#skills-chart .value').each(function(){
-			$('#skills .value').addClass('animate');
-		});
-	}
-
-});
-
-
-
-
 $(document).ready(function(){
+
+	$(window).scroll(function(){
+
+		var wScroll = $(this).scrollTop();
+		var navPos = $('nav').offset().top;
+		var headPos = $('#header').offset().bottom;
+
+		console.log('wScroll');
+
+
+		if(wScroll > $('#textrade').offset().top) {
+
+			$('#skills #skills-chart').each(function(){
+				$('#skills #skills-chart').addClass('is-showing');
+			});
+
+			$('#skills-chart .value').each(function(){
+				$('#skills .value').addClass('animate');
+			});
+		}
+
+	});
 
   // Even when the window is resized, run this code.
   $(window).resize(function(){
