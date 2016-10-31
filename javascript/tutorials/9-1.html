@@ -1,0 +1,26 @@
+---
+layout: default
+title: Home
+---
+<link href="site.css" rel="stylesheet">
+<link href="jquery-ui.min.css" rel="stylesheet">
+<script src="jquery-ui.min.js"></script>
+<script src="jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+  $('#hello').dialog();
+}); // end ready
+
+
+</script>
+<div class='wrapper'>
+	<div class='content'>
+		<div class="main">
+		<div id="hello" title="Hello World!">
+          <p>This dialog box is actually a div, that's placed
+            on the page using absolute positioning.</p>
+          <p>Try dragging the dialog around the screen. You can!</p>
+		</div>
+		</div>
+	</div>
+</div>
