@@ -52,4 +52,19 @@ $(document).ready(function(){
   // Call it on resize.
   }).resize();
 
+
+
+
+  $('.quote1').mouseenter(function(){
+    $(this).fadeOut();
+    $('.info1').fadeIn();
+  });
+	$('.quote2').mouseenter(function(){
+    $(this).fadeOut();
+    $('.info2').fadeIn();
+  });
+	$('.quote3').mouseenter(function(){
+    $(this).fadeOut();
+    $('.info3').fadeIn();
+  });
 });
