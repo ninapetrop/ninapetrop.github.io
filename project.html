@@ -1,0 +1,96 @@
+---
+layout: default
+title: Home
+---
+{% include nav.html %}
+<style>
+.group {
+  width: 350px;
+  height: 200px;
+  margin: 100px auto;
+  position: relative;
+  box-shadow: 0px 2px 4px 2px grey;
+  border-radius: 2px;
+}
+.group .quote, .group img {
+  height: inherit;
+  max-width: inherit;
+  position: absolute;
+}
+.group .quote {
+  z-index: 1;
+  background: white;
+  text-align: center;
+  width: 100%;
+}
+.group .info {
+  top: 210px;
+  background: #4A90E2;
+  width: inherit;
+  height: 30px;
+  position: relative;
+  display: none;
+  color: white;
+}
+
+
+</style>
+<section>
+	<div class='row'>
+
+		<div class='column twelve center'>
+			<h2>Secret Stash:<span> A Few of My Favorite Things</span></h2>
+		</div>
+	</div>
+</section>
+
+<section class='white' id='secret-stash'>
+	<div class='row'>
+		<div class='column six'>
+			<h3>Quote Gallery</h3>
+			<div class='group'>
+				<div class='quote quote1'>
+					<p>
+						"Speak softly and carry a big stick; you will go far."
+					</p>
+				</div>
+				<img src='http://cp91279.biography.com/Theodore-Roosevelt_The-Talented-Mr-Roosevelt_HD_768x432-16x9.jpg'>
+				<div class='info info1'>
+					<p>
+						Theodore Roosevelt 1858 - 1919
+					</p>
+				</div>
+			</div>
+
+			<div class='group'>
+				<div class='quote quote2'>
+					<p>
+						"The only tired I was, was tired of giving in."
+					</p>
+				</div>
+				<img src='http://cdn.history.com/sites/2/2015/05/rosa-parks-84620846-E.jpeg'>
+				<div class='info info2'>
+					<p>
+						Rosa Parks 1913 - 2005
+					</p>
+				</div>
+			</div>
+
+			<div class='group'>
+				<div class='quote quote2'>
+					<p>
+						"Innovation distinguishes between a leader and a follower."
+					</p>
+				</div>
+				<img src='http://www.nowyouknowfacts.com/wp-content/uploads/2015/01/SteveJobsCloseUp.jpeg'>
+				<div class='info info2'>
+					<p>
+						Steve Jobs 1955 - 2011
+					</p>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+</section>
