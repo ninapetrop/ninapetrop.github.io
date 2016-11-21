@@ -82,6 +82,10 @@ h1 {
   font-family: Montserrat, sans-serif;
   font-weight: 400; }
 
+p {
+  font-size: 14px;
+  color: #9B9B9B; }
+
 .uppercase {
   text-transform: uppercase; }
 
@@ -111,6 +115,26 @@ h3 {
   text-align: left;
   text-transform: uppercase;
   color: #9B9B9B; }
+
+#faqs {
+  background: #f9f9f9; }
+  #faqs .row .column ul.faq {
+    max-width: 800px; }
+    #faqs .row .column ul.faq li.question {
+      cursor: pointer;
+      font-size: 22px;
+      padding: 10px 5px;
+      margin: 15px auto 10px auto;
+      font-weight: 600; }
+      #faqs .row .column ul.faq li.question:hover {
+        background: #e0e0e0; }
+    #faqs .row .column ul.faq li.answer {
+      display: none;
+      padding: 10px;
+      color: #566270;
+      font-size: 14px; }
+      #faqs .row .column ul.faq li.answer span {
+        color: #4A90E2; }
 
 footer {
   background: #D8D8D8;
@@ -212,7 +236,8 @@ nav.sticky {
     display: flex;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    position: relative; }
     #recent-work .row .column.four.work-wrap .background {
       width: 290px;
       height: 200px;
@@ -220,6 +245,17 @@ nav.sticky {
       background-size: cover;
       background-repeat: no-repeat;
       box-shadow: 0px 1px 4px 0px rgba(92, 92, 92, 0.5); }
+    #recent-work .row .column.four.work-wrap .details {
+      width: 290px;
+      height: 50px;
+      padding: 5px;
+      display: none;
+      position: absolute;
+      top: 65px;
+      background: rgba(255, 255, 255, 0.9); }
+      #recent-work .row .column.four.work-wrap .details i {
+        margin: auto 5px;
+        font-size: 38px; }
     #recent-work .row .column.four.work-wrap h4 {
       font-weight: 600;
       font-size: 16px;
