@@ -68,3 +68,24 @@ $(document).ready(function(){
     $('.info3').fadeIn();
   });
 });
+
+$(document).ready(function() {
+	 $('.work-wrap .background').hover(function(){
+		 $(this).next().slideToggle(200);
+	 });
+ });
+
+
+
+var action ='click';
+var speed ='500';
+
+$(document).ready(function(){
+
+	$('li.question').on(action,function(){
+		// get next element
+		$(this).next().slideToggle(speed)
+
+		.siblings('li.answer').slideUp();
+	});
+});
